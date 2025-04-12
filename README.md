@@ -3,7 +3,7 @@
 Recommended Custom Recoveries
 ----------
 
-* [OrangeFox FBEv2](https://orangefox.download/release/67b4974225d87f816303d6a3)
+* [OrangeFox FBEv2](https://orangefox.download/release/67f285c1724ba9ed7374ce3b)
 * [TWRP](https://t.me/clarencerepo/510)
 * AOSP Recovery (can be found in rom zip file)
 
