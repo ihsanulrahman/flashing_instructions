@@ -3,7 +3,7 @@
 Recommended Custom Recoveries
 ----------
 
-* [OrangeFox FBEv2](https://orangefox.download/release/67f285c1724ba9ed7374ce3b)
+* [OrangeFox FBEv2](https://cyberneticsnail.pages.dev/api/raw?path=/test/OrangeFox-R11.3-Unofficial-miatoll.zip)
 * [TWRP](https://t.me/clarencerepo/510)
 * AOSP Recovery (can be found in rom zip file)
 
@@ -54,7 +54,7 @@ VoltageOS ⚡ Clean Flash (Sandbox Gapps)
 
 # Keep in mind
 
-If you are coming from a11,12,13 and going to flash a14/a15 rom , must format data after 1st boot of rom to avoid attachment not supported or storage related bugs
+If you are coming from a11,12,13 and going to flash a14/a15/a16 rom , must format data after 1st boot of rom to avoid attachment not supported or storage related bugs
 
 # For any queries ask in [SUPPORT GROUP](https://t.me/Miatoll_Support)
 
