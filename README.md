@@ -1,63 +1,98 @@
-# Flashing instructions For Miatoll
+# 📱 Flashing Instructions for Miatoll Devices
 
-Recommended Custom Recoveries
-----------
+> **Supported Devices:** Redmi Note 9S / 9Pro / 9Pro Max / 10Lite / Poco M2 Pro
 
-* [OrangeFox FBEv2](https://cyberneticsnail.pages.dev/api/raw?path=/test/OrangeFox-R11.3-Unofficial-miatoll.zip)
-* [TWRP](https://t.me/clarencerepo/510)
-* AOSP Recovery (can be found in rom zip file)
+## Table of Contents
+- [Recommended Recoveries](#recommended-recoveries)
+- [Terminology](#terminology)
+- [Preparation](#preparation)
+- [Flashing Steps](#flashing-steps)
+  - [Clean Flash](#clean-flash)
+  - [Dirty Flash](#dirty-flash)
+  - [VoltageOS (Sandbox Gapps)](#voltageos--clean-flash-sandbox-gapps)
+- [Important Notes](#important-notes)
+- [Troubleshooting](#troubleshooting)
+- [Support](#support)
+- [Contributing](#contributing)
 
-Flashing Steps
-------------
+---
 
-Clean Flash
------------
-- Use Recommended Recovery 
-- Boot To Recovery And Wipe dalvick , data, cache
-- Flash Rom Zip File
-- Format Data
-- Flash Gapps ( If using vanilla rom )
-- Reboot system
+## Recommended Recoveries
 
-Dirty Flash
-------------
+- [OrangeFox FBEv2](https://cyberneticsnail.pages.dev/api/raw?path=/test/OrangeFox-R11.3-Unofficial-miatoll.zip)
+- [TWRP](https://t.me/clarencerepo/510)
+- AOSP Recovery (included in ROM zip)
 
-- Wipe Dalvick Cache ( Don't wipe data ) Flash ROM file
-- Reboot system ( Flash Magisk After first boot if you are rooted before , Flash Gapps package if you used before)
+## Terminology
 
+- **Clean Flash:** Wipes all data before installing the ROM, recommended for major updates.
+- **Dirty Flash:** Installs a new ROM version over the old one, keeping user data.
+- **Gapps:** Google Apps package for ROMs without built-in Google services.
 
-VoltageOS ⚡ Clean Flash (Sandbox Gapps)
---------
+## Preparation
 
-- Flash rom through recovery 
+1. Backup your data! Flashing may erase all device data.
+2. Charge your device to at least 50%.
+3. Download your chosen recovery and ROM zip files.
 
-- Format Data/Factory Reset
+---
 
-- Click Reboot System Now
+## Flashing Steps
 
-- Download [THIS](https://github.com/GrapheneOS/AppStore/releases) app
+### Clean Flash
 
-- Open the app
+> ⚠️ **Warning:** This will erase all your data.
 
-<p align="left"> <img src="https://raw.githubusercontent.com/Karan-Frost/images/refs/heads/main/IMG_20241209_143433_631.jpg"> </p>
+1. Boot to recovery.
+2. Wipe: Dalvik, Data, and Cache.
+3. Flash ROM zip.
+4. Format Data (`FORMAT DATA` or `Factory Reset`).
+5. *(Optional)* Flash Gapps if your ROM doesn't include Google Apps.
+6. Reboot system.
 
-- Download this app
+### Dirty Flash
 
-- Enjoy rom with Sandbox Gapps
+1. Boot to recovery.
+2. Wipe Dalvik Cache *(Do NOT wipe Data)*.
+3. Flash new ROM zip.
+4. Reboot system.
+5. *(Optional)* Flash Magisk after first boot if previously rooted.
+6. *(Optional)* Flash Gapps if previously used.
 
-- In case of any issue with Google contacts syncing, give contacts permission to Play services and reboot device once.
+### VoltageOS ⚡ Clean Flash (Sandbox Gapps)
 
-- More information on Sandbox Gapps - [HERE](https://grapheneos.org/usage#sandboxed-google-play)
+1. Flash ROM via recovery.
+2. Format Data/Factory Reset.
+3. Reboot system.
+4. Download and install [App Store](https://github.com/GrapheneOS/AppStore/releases).
+5. Open the App Store and download desired apps.
+   - ![App screenshot](https://raw.githubusercontent.com/Karan-Frost/images/refs/heads/main/IMG_20241209_143433_631.jpg)
+6. For Google Contacts sync issues: Give Contacts permission to Play Services and reboot.
+7. More about Sandbox Gapps: [Read here](https://grapheneos.org/usage#sandboxed-google-play).
+8. For specific fixes: [VoltageOS support post](https://t.me/voltageos/122664).
 
-- For some fixes - [HERE](https://t.me/voltageos/122664)
+---
 
+## Important Notes
 
-# Keep in mind
+- If upgrading from Android 11/12/13 to 14/15/16, **format data after first boot** to avoid storage bugs.
+- Always read ROM-specific instructions if provided.
 
-If you are coming from a11,12,13 and going to flash a14/a15/a16 rom , must format data after 1st boot of rom to avoid attachment not supported or storage related bugs
+## Troubleshooting
 
-# For any queries ask in [SUPPORT GROUP](https://t.me/Miatoll_Support)
+- **Attachment not supported / storage bugs:** Perform a data format after first boot.
+- **Contact sync issues:** Ensure Play Services has Contacts permission and reboot.
 
+## Support
 
-HAPPY FLASHING 
----------
+- For questions, join the [SUPPORT GROUP](https://t.me/Miatoll_Support).
+
+---
+
+## Contributing
+
+Found a mistake or want to suggest improvements? Feel free to open a Pull Request!
+
+---
+
+**Happy Flashing! 🚀**
