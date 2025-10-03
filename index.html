@@ -1,0 +1,208 @@
+    <!DOCTYPE html>
+    <html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Voltage OS Flashing Guide for Miatoll</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="bg-gradient-to-b from-slate-900 to-black text-slate-300">
+
+        <!-- Header -->
+        <header class="bg-slate-900/80 backdrop-blur-sm sticky top-0 z-50 border-b border-slate-700">
+            <nav class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <div class="flex items-center">
+                        <span class="font-bold text-xl text-white">VoltageOS Guide (Miatoll)</span>
+                    </div>
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4">
+                            <a href="#section-recovery" class="text-slate-300 hover:bg-slate-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Recovery</a>
+                            <a href="#section-firmware" class="text-slate-300 hover:bg-slate-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Firmware</a>
+                            <a href="#section-rom" class="text-slate-300 hover:bg-slate-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">ROM</a>
+                            <a href="#section-update" class="text-slate-300 hover:bg-slate-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Update</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="max-w-5xl mx-auto p-4 sm:p-6 lg:p-8">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-bold text-white tracking-tight">Voltage OS Flashing Guide for Miatoll</h1>
+                <p class="mt-4 text-lg text-slate-400">Your complete guide to installing Voltage OS on your Redmi Note 9S / 9 Pro / 9 Pro Max / 10 Lite / Poco M2 Pro (Miatoll).</p>
+            </div>
+
+            <!-- Instructions Container -->
+            <div class="space-y-12">
+
+                <!-- Section 1: Flashing Recovery -->
+                <section id="section-recovery">
+                    <h2 class="text-2xl font-semibold text-white border-l-4 border-cyan-400 pl-4 mb-6">Flashing Recovery</h2>
+                    <div class="bg-slate-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="font-semibold text-white text-lg mb-4">Downloads:</h3>
+                        <ul class="list-disc list-inside space-y-3 mb-6">
+                            <li><a href="https://cyberneticsnail.pages.dev/api/raw?path=/test/OrangeFox-R11.3-Unofficial-miatoll.zip" target="_blank" class="text-cyan-400 hover:text-cyan-300 underline">OFOX Fbev2</a></li>
+                            <li><a href="https://t.me/clarencerepo/510" target="_blank" class="text-cyan-400 hover:text-cyan-300 underline">TWRP</a></li>
+                            <li><a>AOSP Recovery (included in ROM zip)</a></li>
+                        </ul>
+
+                        <h3 class="font-semibold text-white text-lg mt-8 mb-4">Steps:</h3>
+                        <p class="mb-4">1. Reboot to fastboot mode by holding <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg">Volume Down</kbd> + <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg">Power</kbd> until the fastboot logo appears.</p>
+                        <p class="mb-4">2. Connect your phone to your PC and run the following commands:</p>
+                        <p class="mb-4">For OFOX you have to extract *.img file from OFOX zip</p>
+
+                        <div class="space-y-4">
+                            <pre class="bg-slate-900 rounded-md p-4 text-sm relative"><code class="text-slate-300">fastboot flash recovery recovery.img</code><button class="copy-btn absolute top-2 right-2 bg-slate-700 hover:bg-slate-600 text-white text-xs font-semibold py-1 px-2 rounded">Copy</button></pre>
+                        </div>
+                        <p class="mb-4">OR you can just flash recovery from existing one using sdcard etc.</p>
+
+                        <p class="mt-6">3. Reboot to recovery mode by holding <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg">Volume Up</kbd> + <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg">Power</kbd> until the recovery screen appears.</p>
+                    </div>
+                </section>
+
+                <!-- Section 2: Flashing Firmware -->
+                <section id="section-firmware">
+                    <h2 class="text-2xl font-semibold text-white border-l-4 border-cyan-400 pl-4 mb-6">Flashing Firmware</h2>
+                    <p class="mb-4">Download the latest regional firmware from <a href="https://xmfirmwareupdater.com/" target="_blank" class="text-cyan-400 hover:text-cyan-300 underline">here</a>.</p>
+                        <div class="bg-slate-800 p-6 rounded-lg shadow-lg md:border-r md:border-slate-700">
+                            <h4 class="font-semibold text-white mb-2">Using Recovery</h4>
+                            <ol class="list-decimal list-inside space-y-2">
+                                <li>In recovery, select Firmware file and Flash it.</li>
+                                <li>Flashing firmware is not necessary everytime you flash a ROM.</li>
+                            </ol>
+                    </div>
+                </section>
+
+                <!-- Section 3: Flashing ROM -->
+                <section id="section-rom">
+                    <h2 class="text-2xl font-semibold text-white border-l-4 border-cyan-400 pl-4 mb-6">Flashing ROM</h2>
+                    <div class="space-y-8">
+                        <!-- Clean Flash (Vanilla) -->
+                        <div class="bg-slate-800 p-6 rounded-lg shadow-lg">
+                            <h3 class="text-xl font-bold text-white mb-4">A. Clean Flash (Vanilla) using sideload</h3>
+                            <ol class="list-decimal list-inside space-y-2">
+                                <li>Select <span class="font-semibold text-slate-100">Format Data</span>.</li>
+                                <li>Select <span class="font-semibold text-slate-100">ADB sideload</span> &rarr; <span class="font-semibold text-slate-100">Swipe to go to ADB sideload</span>.</li>
+                                <li>On your PC, run:</li>
+                                <pre class="bg-slate-900 rounded-md p-4 text-sm relative my-2"><code class="text-slate-300">adb sideload rom.zip</code><button class="copy-btn absolute top-2 right-2 bg-slate-700 hover:bg-slate-600 text-white text-xs font-semibold py-1 px-2 rounded">Copy</button></pre>
+                                <li>Select <span class="font-semibold text-slate-100">Format Data/Factory Reset</span>.</li>
+                                <li>Select <span class="font-semibold text-slate-100">Reboot to System</span>.</li>
+                            </ol>
+                            <h3 class="text-xl font-bold text-white mb-4">B. Clean Flash (Vanilla) using sdcard/otg</h3>
+                            <ol class="list-decimal list-inside space-y-2">
+                                <li>Select <span class="font-semibold text-slate-100">Format Data</span>.</li>
+                                <li>Select <span class="font-semibold text-slate-100">ROM file</span> &rarr; <span class="font-semibold text-slate-100">Swipe to flash</span>.</li>
+                                <li>Select <span class="font-semibold text-slate-100">Format Data/Factory Reset</span>.</li>
+                                <li>Select <span class="font-semibold text-slate-100">Reboot to System</span>.</li>
+                            </ol>
+                        </div>
+
+                        <!-- Clean Flash (Sandbox GApps) -->
+                        <div class="bg-slate-800 p-6 rounded-lg shadow-lg">
+                            <h3 class="text-xl font-bold text-white mb-4">2. Clean Flash (Sandbox GApps)</h3>
+                            <p class="mb-4">Follow steps A or B from the <span class="font-semibold text-slate-100">Clean Flash (Vanilla)</span> method above.</p>
+                            <ol class="list-decimal list-inside space-y-2" start="7">
+                                <li>After rebooting, download and install the <a href="https://github.com/GrapheneOS/AppStore/releases" target="_blank" class="text-cyan-400 hover:text-cyan-300 underline">GrapheneOS App Store</a>.</li>
+                                <li>Open the app and install "Google Play services", "Google Services Framework" and "Google Play Store".</li>
+                            </ol>
+                            <div class="mt-4 flex flex-col md:flex-row gap-4 items-center bg-slate-700/50 p-4 rounded-lg">
+                                <img src="https://raw.githubusercontent.com/Karan-Frost/images/refs/heads/main/IMG_20241209_143433_631.jpg" alt="GrapheneOS App Store screenshot" class="rounded-md w-full md:w-1/3 object-cover">
+                                <div class="text-sm">
+                                    <p class="mb-2">For more information on Sandboxed Google Play, read the <a href="https://grapheneos.org/usage#sandboxed-google-play" target="_blank" class="text-cyan-400 hover:text-cyan-300 underline">official documentation</a>.</p>
+                                    <p>For potential fixes and workarounds, check <a href="https://t.me/voltageos/122664" target="_blank" class="text-cyan-400 hover:text-cyan-300 underline">this post</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Clean Flash (Normal GApps) -->
+                        <div class="bg-slate-800 p-6 rounded-lg shadow-lg">
+                            <h3 class="text-xl font-bold text-white mb-4">A. Clean Flash (Normal GApps) using sideload</h3>
+                            <ol class="list-decimal list-inside space-y-2">
+                                <li>Select <span class="font-semibold text-slate-100">Format Data</span>.</li>
+                                <li>Select <span class="font-semibold text-slate-100">ADB sideload</span> &rarr; <span class="font-semibold text-slate-100">Swipe to go to ADB sideload</span>.</li>
+                                <li>Sideload the ROM zip:</li>
+                                <pre class="bg-slate-900 rounded-md p-4 text-sm relative my-2"><code class="text-slate-300">adb sideload rom.zip</code><button class="copy-btn absolute top-2 right-2 bg-slate-700 hover:bg-slate-600 text-white text-xs font-semibold py-1 px-2 rounded">Copy</button></pre>
+                                <li><span class="font-semibold text-slate-100">DO NOT REBOOT.</span> Go back and select <span class="font-semibold text-slate-100">ADB sideload</span> &rarr; <span class="font-semibold text-slate-100">Swipe to go to ADB sideload</span> again.</li>
+                                <li>Sideload your GApps package:</li>
+                                <pre class="bg-slate-900 rounded-md p-4 text-sm relative my-2"><code class="text-slate-300">adb sideload gapps.zip</code><button class="copy-btn absolute top-2 right-2 bg-slate-700 hover:bg-slate-600 text-white text-xs font-semibold py-1 px-2 rounded">Copy</button></pre>
+                                <li>Once back in recovery, select <span class="font-semibold text-slate-100">Factory Reset</span>.</li>
+                                <li>Select <span class="font-semibold text-slate-100">Format Data/Factory Reset</span>.</li>
+                                <li>Select <span class="font-semibold text-slate-100">Reboot System Now</span>.</li>
+                            </ol>
+                            <h3 class="text-xl font-bold text-white mb-4">B. Clean Flash (Normal GAPPS) using sdcard/otg</h3>
+                            <ol class="list-decimal list-inside space-y-2">
+                                <li>Select <span class="font-semibold text-slate-100">Format Data</span>.</li>
+                                <li>Select <span class="font-semibold text-slate-100">ROM file</span> &rarr; <span class="font-semibold text-slate-100">Swipe to flash</span>.</li>
+                                <li>Select <span class="font-semibold text-slate-100">GAPPS file</span> &rarr; <span class="font-semibold text-slate-100">Swipe to flash</span>.</li>
+                                <li>Select <span class="font-semibold text-slate-100">Format Data/Factory Reset</span>.</li>
+                                <li>Select <span class="font-semibold text-slate-100">Reboot to System</span>.</li>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Section 4: Updating ROM -->
+                <section id="section-update">
+                    <h2 class="text-2xl font-semibold text-white border-l-4 border-cyan-400 pl-4 mb-6">Updating ROM</h2>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-slate-800 p-6 rounded-lg shadow-lg md:border-r md:border-slate-700">
+                            <h3 class="text-xl font-bold text-white mb-4">1. Dirty Flash</h3>
+                            <ol class="list-decimal list-inside space-y-2">
+                                <li>Select <span class="font-semibold text-slate-100">ADB sideload</span> &rarr; <span class="font-semibold text-slate-100">Swipe to go to ADB sideload</span>.</li>
+                                <li>Sideload the new ROM zip:</li>
+                                <pre class="bg-slate-900 rounded-md p-4 text-sm relative my-2"><code class="text-slate-300">adb sideload rom.zip</code><button class="copy-btn absolute top-2 right-2 bg-slate-700 hover:bg-slate-600 text-white text-xs font-semibold py-1 px-2 rounded">Copy</button></pre>
+                                <li>If you did not flash GApps previously, select <span class="font-semibold text-slate-100">Reboot System Now</span>.</li>
+                            </ol>
+                            <div class="mt-4 border-t border-slate-700 pt-4">
+                                <p class="font-semibold text-yellow-300">If you flashed GApps previously:</p>
+                                <ol class="list-decimal list-inside space-y-2 mt-2">
+                                    <li><span class="font-bold">DO NOT REBOOT.</span> Select <span class="font-semibold text-slate-100">ADB sideload</span> &rarr; <span class="font-semibold text-slate-100">Swipe to go to ADB sideload</span> again.</li>
+                                    <li>Sideload the GApps zip:</li>
+                                    <pre class="bg-slate-900 rounded-md p-4 text-sm relative my-2"><code class="text-slate-300">adb sideload gapps.zip</code><button class="copy-btn absolute top-2 right-2 bg-slate-700 hover:bg-slate-600 text-white text-xs font-semibold py-1 px-2 rounded">Copy</button></pre>
+                                    <li>Select <span class="font-semibold text-slate-100">Reboot System Now</span>.</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="bg-slate-800 p-6 rounded-lg shadow-lg">
+                            <h3 class="text-xl font-bold text-white mb-4">2. Through OTA</h3>
+                            <ol class="list-decimal list-inside space-y-2">
+                                <li>Navigate to <span class="font-semibold text-slate-100">Settings</span> &rarr; <span class="font-semibold text-slate-100">System</span> &rarr; <span class="font-semibold text-slate-100">System updates</span>.</li>
+                                <li>Download the latest available build.</li>
+                                <li>Tap <span class="font-semibold text-slate-100">Reboot</span> in the updater once the download is complete.</li>
+                                <li>The device will automatically update and reboot.</li>
+                            </ol>
+                        </div>
+                        <div class="bg-slate-800 p-6 rounded-lg shadow-lg">
+                            <h3 class="text-xl font-bold text-white mb-4">3 Through internal storage/sdcard/OTG</h3>
+                            <ol class="list-decimal list-inside space-y-2">
+                                <li>Download the latest available build.</li>
+                                <li>Reboot to <span class="font-semibold text-slate-100">Recovery</span> &rarr; <span class="font-semibold text-slate-100">System</span> &rarr; <span class="font-semibold text-slate-100">System updates</span>.</li>
+                                <li>Select <span class="font-semibold text-slate-100">ROM file</span> &rarr; <span class="font-semibold text-slate-100">Swipe to flash</span>.</li>
+                                <li>Select GAPPS if u flashed it before and flash it.</li>
+                                <li>Wipe Cache.</li>
+                                <li>Reboot to system.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </section>
+
+                
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-slate-900 mt-12 border-t border-slate-800">
+            <div class="max-w-5xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center text-slate-400">
+                <p>For any queries, ask in the <a href="https://t.me/Miatoll_Support" target="_blank" class="text-cyan-400 hover:text-cyan-300 font-semibold underline">Support Group</a>.</p>
+                <p>Crafted by Frost & iHSAN | 2025</p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+    </html>
