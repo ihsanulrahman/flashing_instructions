@@ -3,229 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Flashing guides hub for Miatoll devices – Voltage OS and other ROMs">
-  <title>Miatoll Flashing Guides</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="Community-maintained custom ROM flashing guides for Miatoll devices. Recovery, firmware, VoltageOS, Google Play, and updates, step by step.">
+  <meta name="theme-color" content="#f7f7f2">
+  <title>Miatoll Guides — A fresh start for your phone</title>
+  <script src="theme.js"></script>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-  <!-- NAV -->
-  <header class="nav-wrap">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo">
-        <div class="nav-logo-icon" style="background:linear-gradient(135deg,#38bdf8,#6366f1)">
-          <i class="fas fa-bolt" style="color:#fff;font-size:13px"></i>
-        </div>
-        <span class="nav-logo-name">Miatoll Guides</span>
-      </a>
-      <nav class="nav-links">
-        <a href="#guides" class="nav-link"><i class="fas fa-book-open"></i> Guides</a>
-        <a href="#devices" class="nav-link"><i class="fas fa-mobile-alt"></i> Devices</a>
-        <a href="#warning" class="nav-link warn"><i class="fas fa-exclamation-triangle"></i> Warning</a>
-      </nav>
-      <button class="mobile-menu-btn" id="mobile-menu-btn"><i class="fas fa-bars"></i></button>
-    </div>
-    <div class="mobile-menu" id="mobile-menu">
-      <a href="#guides" class="nav-link"><i class="fas fa-book-open"></i> Guides</a>
-      <a href="#devices" class="nav-link"><i class="fas fa-mobile-alt"></i> Devices</a>
-      <a href="#warning" class="nav-link warn"><i class="fas fa-exclamation-triangle"></i> Warning</a>
-    </div>
-  </header>
-
-  <main class="page-main">
-
-    <!-- HERO -->
-    <div class="hero">
-      <div class="hero-eyebrow">
-        <i class="fas fa-mobile-alt"></i> Snapdragon 720G · Miatoll
-      </div>
-      <h1>Custom ROM<br>Flashing Guides</h1>
-      <p>Step-by-step instructions for flashing custom ROMs on your Miatoll device. Choose a guide to get started.</p>
-      <div class="device-badges">
-        <span class="device-badge">Redmi Note 9S</span>
-        <span class="device-badge">Redmi Note 9 Pro</span>
-        <span class="device-badge">Redmi Note 9 Pro Max</span>
-        <span class="device-badge">Redmi Note 10 Lite</span>
-        <span class="device-badge">Poco M2 Pro</span>
-      </div>
-    </div>
-
-    <!-- WARNINGS -->
-    <div id="warning">
-      <div class="alert amber">
-        <i class="fas fa-exclamation-triangle alert-icon"></i>
-        <div>
-          <div class="alert-title">⚠ Important Warning</div>
-          <div class="alert-body">
-            Flashing custom ROMs carries risks. Always backup your data, ensure your device is charged, and follow instructions carefully. The developers are not responsible for any damage to your device.
-          </div>
-          <div class="alert-tags">
-            <span class="alert-tag"><i class="fas fa-database" style="margin-right:5px"></i>Backup Data</span>
-            <span class="alert-tag"><i class="fas fa-battery-full" style="margin-right:5px"></i>Charge &gt; 60%</span>
-            <span class="alert-tag"><i class="fas fa-unlock" style="margin-right:5px"></i>Unlock Bootloader</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="alert red">
-        <i class="fas fa-exclamation-circle alert-icon"></i>
-        <div>
-          <div class="alert-title">🔄 Format Data Requirement</div>
-          <div class="alert-body">
-            If you were using any ROM lower than Android 15, or any port ROM — <strong style="color:#fca5a5">you must format data in recovery after the 1st boot</strong> to avoid storage-related bugs. This is critical when coming from older Android versions or ported ROMs.
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- GUIDE CARDS -->
-    <section id="guides" style="margin-bottom:3.5rem">
-      <div class="section-header">
-        <div class="section-icon cyan"><i class="fas fa-book-open"></i></div>
-        <h2>Select a Guide</h2>
-      </div>
-
-      <div class="grid-2">
-        <!-- VoltageOS -->
-        <div class="hub-card" style="border-color:rgba(163,230,53,.12)">
-          <div class="hub-card-icon volt-dim" style="border:1px solid rgba(163,230,53,.2)">
-            <i class="fas fa-bolt volt-accent"></i>
-          </div>
-          <div>
-            <h3 style="font-family:'Syne',sans-serif;font-size:1.25rem;font-weight:800;margin-bottom:4px">VoltageOS Guide</h3>
-            <p style="font-size:.85rem;color:var(--text-muted)">AOSP-based · Privacy-focused</p>
-          </div>
-          <ul class="features">
-            <li><i class="fas fa-check-circle"></i><span>Sandboxed Google Play support</span></li>
-            <li><i class="fas fa-check-circle"></i><span>Privacy-focused features</span></li>
-            <li><i class="fas fa-check-circle"></i><span>Regular OTA updates</span></li>
-            <li><i class="fas fa-check-circle"></i><span>Vanilla & GApps options</span></li>
-          </ul>
-          <a href="voltage_index.html" class="hub-cta" style="background:rgba(163,230,53,.12);color:var(--volt);border:1px solid rgba(163,230,53,.25)">
-            <i class="fas fa-bolt" style="margin-right:8px"></i>Open VoltageOS Guide
-          </a>
-          <p style="font-size:11px;color:var(--text-muted);text-align:center;margin-top:.75rem">Recommended for privacy-conscious users</p>
-        </div>
-
-        <!-- Other ROMs -->
-        <div class="hub-card" style="border-color:rgba(99,102,241,.12)">
-          <div class="hub-card-icon" style="background:rgba(99,102,241,.12);border:1px solid rgba(99,102,241,.2)">
-            <i class="fas fa-layer-group" style="color:#818cf8"></i>
-          </div>
-          <div>
-            <h3 style="font-family:'Syne',sans-serif;font-size:1.25rem;font-weight:800;margin-bottom:4px">Other ROMs Guide</h3>
-            <p style="font-size:.85rem;color:var(--text-muted)">Universal flashing guide</p>
-          </div>
-          <ul class="features">
-            <li><i class="fas fa-check-circle"></i><span>Universal flashing instructions</span></li>
-            <li><i class="fas fa-check-circle"></i><span>Multiple ROM support</span></li>
-            <li><i class="fas fa-check-circle"></i><span>Recovery &amp; Firmware guides</span></li>
-            <li><i class="fas fa-check-circle"></i><span>Troubleshooting section</span></li>
-          </ul>
-          <a href="normal_index.html" class="hub-cta" style="background:rgba(99,102,241,.12);color:#818cf8;border:1px solid rgba(99,102,241,.25)">
-            <i class="fas fa-layer-group" style="margin-right:8px"></i>Open Other ROMs Guide
-          </a>
-          <p style="font-size:11px;color:var(--text-muted);text-align:center;margin-top:.75rem">For LineageOS, Pixel Experience, etc.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- SUPPORTED DEVICES -->
-    <section id="devices" style="margin-bottom:3.5rem">
-      <div class="section-header">
-        <div class="section-icon cyan"><i class="fas fa-mobile-alt"></i></div>
-        <h2>Supported Devices</h2>
-      </div>
-      <div class="device-grid">
-        <div class="device-card"><i class="fas fa-mobile-alt"></i><h4>Redmi Note 9S</h4><p>curtana</p></div>
-        <div class="device-card"><i class="fas fa-mobile-alt"></i><h4>Redmi Note 9 Pro</h4><p>joyeuse</p></div>
-        <div class="device-card"><i class="fas fa-mobile-alt"></i><h4>Redmi Note 9 Pro Max</h4><p>excalibur</p></div>
-        <div class="device-card"><i class="fas fa-mobile-alt"></i><h4>Redmi Note 10 Lite</h4><p>curtana</p></div>
-        <div class="device-card"><i class="fas fa-mobile-alt"></i><h4>Poco M2 Pro</h4><p>gram</p></div>
-      </div>
-    </section>
-
-    <!-- QUICK TIPS -->
-    <section>
-      <div class="section-header">
-        <div class="section-icon" style="background:rgba(251,191,36,.1);color:#fbbf24"><i class="fas fa-lightbulb"></i></div>
-        <h2>Quick Tips</h2>
-      </div>
-      <div class="card" style="padding:1.75rem">
-        <div class="tips-grid">
-          <div class="tip-item">
-            <div class="tip-icon" style="background:rgba(56,189,248,.1)"><i class="fas fa-database" style="color:var(--cyan)"></i></div>
-            <div>
-              <div class="tip-title">Backup Everything</div>
-              <div class="tip-desc">Use Titanium Backup or Migrate to save apps and data before flashing.</div>
-            </div>
-          </div>
-          <div class="tip-item">
-            <div class="tip-icon" style="background:rgba(245,158,11,.1)"><i class="fas fa-battery-full" style="color:#f59e0b"></i></div>
-            <div>
-              <div class="tip-title">Charge Your Device</div>
-              <div class="tip-desc">Ensure at least 60% battery before starting the flashing process.</div>
-            </div>
-          </div>
-          <div class="tip-item">
-            <div class="tip-icon" style="background:rgba(99,102,241,.1)"><i class="fas fa-usb" style="color:#818cf8"></i></div>
-            <div>
-              <div class="tip-title">Use OEM Cable</div>
-              <div class="tip-desc">Use the original USB cable to avoid disconnection issues during flashing.</div>
-            </div>
-          </div>
-          <div class="tip-item">
-            <div class="tip-icon" style="background:rgba(52,211,153,.1)"><i class="fas fa-book" style="color:var(--green)"></i></div>
-            <div>
-              <div class="tip-title">Read Carefully</div>
-              <div class="tip-desc">Read each step carefully before proceeding. Never skip any steps.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <div class="footer-col-title">Miatoll Guides</div>
-          <p>Community-maintained flashing guides for Snapdragon 720G Miatoll devices.</p>
-        </div>
-        <div class="footer-col">
-          <div class="footer-col-title">Community</div>
-          <div class="footer-links">
-            <a href="https://t.me/Miatoll_Support" target="_blank" class="footer-link"><i class="fab fa-telegram-plane"></i> Support</a>
-            <a href="https://t.me/miatoll" target="_blank" class="footer-link"><i class="fas fa-bell"></i> Updates</a>
-            <a href="https://github.com/VoltageOS" target="_blank" class="footer-link"><i class="fab fa-github"></i> GitHub</a>
-          </div>
-        </div>
-        <div class="footer-col">
-          <div class="footer-col-title">Contributors</div>
-          <div class="footer-links">
-            <span class="contributor-chip">Frost</span>
-            <span class="contributor-chip">iHSAN</span>
-            <span class="contributor-chip">Community</span>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>For educational purposes only. All trademarks belong to their respective owners.</p>
-        <p style="margin-top:4px">Crafted with ❤️ for the Miatoll community · 2025</p>
-      </div>
-    </div>
-  </footer>
-
-  <button id="back-to-top" title="Back to top"><i class="fas fa-arrow-up"></i></button>
-
-  <script src="script.js"></script>
-</body>
-</html>
+  <script src="script.js" defer></script>
+</head><body class="home-page"><a class="skip-link" href="#main">Skip to content</a>
+<header class="nav-wrap"><div class="nav-inner">
+  <a href="index.html" class="nav-logo" aria-label="Miatoll Guides home"><span class="nav-logo-icon"><svg class="icon " aria-hidden="true"><use href="icons.svg#bolt"/></svg></span><span class="nav-logo-name">miatoll<span class="logo-suffix"> / guides</span></span></a>
+  <nav class="nav-links" aria-label="Main navigation"><a href="#guides" class="nav-link">The guides</a><a href="#devices" class="nav-link">Supported devices</a><a href="#warning" class="nav-link">Before you flash</a></nav>
+  <div class="nav-actions"><button class="icon-button theme-toggle" type="button" aria-label="Switch to dark theme"><svg class="icon " aria-hidden="true"><use href="icons.svg#moon"/></svg></button><a href="https://t.me/Miatoll_Support" target="_blank" rel="noopener noreferrer" class="nav-support">Get support <svg class="icon " aria-hidden="true"><use href="icons.svg#external"/></svg></a><button class="icon-button mobile-menu-btn" id="mobile-menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><svg class="icon " aria-hidden="true"><use href="icons.svg#menu"/></svg></button></div>
+</div><nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden><a href="#guides" class="nav-link">The guides</a><a href="#devices" class="nav-link">Supported devices</a><a href="#warning" class="nav-link">Before you flash</a><a href="https://t.me/Miatoll_Support" target="_blank" rel="noopener noreferrer" class="nav-link">Community support ↗</a></nav></header>
+<main id="main" class="page-main">
+  <section class="home-hero" aria-labelledby="hero-title"><div class="hero-copy"><div class="eyebrow"><span class="status-dot"></span> CUSTOM ROM FLASHING GUIDES</div><h1 id="hero-title">Your phone.<br><span>A fresh start.</span></h1><p>A little guidance. A lot of possibilities. Step-by-step instructions to bring a new ROM to your Miatoll device.</p><div class="hero-actions"><a href="#guides" class="button button-primary">Find your guide <svg class="icon " aria-hidden="true"><use href="icons.svg#arrow"/></svg></a><a href="#warning" class="text-link">First time flashing? <svg class="icon " aria-hidden="true"><use href="icons.svg#chevron"/></svg></a></div><div class="hero-note"><svg class="icon " aria-hidden="true"><use href="icons.svg#heart"/></svg> Made by the community, for the community.</div></div><div class="hero-art"><img src="device-art.svg" width="560" height="490" alt="Two Miatoll phones with an orange custom ROM screen and Snapdragon 720G badge"><div class="art-caption"><span>ONE DEVICE. MORE POSSIBILITIES.</span><span>MIATOLL / 720G</span></div></div></section>
+  <div class="intro-strip"><span><strong>05</strong> supported devices</span><span><strong>02</strong> complete guides</span><span><svg class="icon " aria-hidden="true"><use href="icons.svg#book"/></svg> From recovery to first boot</span><span class="strip-note">A new chapter for your daily driver.</span></div>
+  <section id="guides" class="home-section" aria-label="Select a guide"><div class="section-heading"><div><div class="eyebrow">CHOOSE YOUR PATH</div><h2>Good things start with a guide.</h2></div><p>Pick your ROM. We’ll walk you through the rest.</p></div><div class="guide-grid"><article class="guide-card voltage-card"><div class="guide-card-top"><span class="guide-emblem"><svg class="icon " aria-hidden="true"><use href="icons.svg#bolt"/></svg></span><span class="pill">Privacy first</span><span class="card-index">01 /</span></div><h3>VoltageOS</h3><p class="guide-subtitle">AOSP-based. Privacy-focused. Yours to explore.</p><ul class="features"><li><svg class="icon " aria-hidden="true"><use href="icons.svg#check"/></svg><span>Sandboxed Google Play support</span></li><li><svg class="icon " aria-hidden="true"><use href="icons.svg#check"/></svg><span>Privacy-focused features</span></li><li><svg class="icon " aria-hidden="true"><use href="icons.svg#check"/></svg><span>Regular OTA updates</span></li><li><svg class="icon " aria-hidden="true"><use href="icons.svg#check"/></svg><span>Vanilla &amp; GApps options</span></li></ul><a href="voltage_index.html" class="guide-cta">Open VoltageOS guide <svg class="icon " aria-hidden="true"><use href="icons.svg#arrow"/></svg></a><div class="guide-footnote"><svg class="icon " aria-hidden="true"><use href="icons.svg#shield"/></svg>Recommended for privacy-conscious users</div></article><article class="guide-card universal-card"><div class="guide-card-top"><span class="guide-emblem"><svg class="icon " aria-hidden="true"><use href="icons.svg#layers"/></svg></span><span class="pill">The all-rounder</span><span class="card-index">02 /</span></div><h3>Other ROMs</h3><p class="guide-subtitle">Your ROM of choice. One universal flashing guide.</p><ul class="features"><li><svg class="icon " aria-hidden="true"><use href="icons.svg#check"/></svg><span>Universal flashing instructions</span></li><li><svg class="icon " aria-hidden="true"><use href="icons.svg#check"/></svg><span>Multiple ROM support</span></li><li><svg class="icon " aria-hidden="true"><use href="icons.svg#check"/></svg><span>Recovery &amp; firmware guides</span></li><li><svg class="icon " aria-hidden="true"><use href="icons.svg#check"/></svg><span>Troubleshooting section</span></li></ul><a href="normal_index.html" class="guide-cta">Open Other ROMs guide <svg class="icon " aria-hidden="true"><use href="icons.svg#arrow"/></svg></a><div class="guide-footnote"><svg class="icon " aria-hidden="true"><use href="icons.svg#layers"/></svg>For LineageOS, Pixel Experience, and more</div></article></div></section>
+  <section id="devices" class="home-section" aria-label="Supported devices"><div class="section-heading"><div><div class="eyebrow">THE MIATOLL FAMILY</div><h2>Five devices. One starting point.</h2></div><p>Snapdragon 720G</p></div><div class="device-grid"><div class="device-card"><span class="device-mark"><svg class="icon " aria-hidden="true"><use href="icons.svg#phone"/></svg></span><h3>Redmi Note 9S</h3><p>curtana</p></div><div class="device-card"><span class="device-mark"><svg class="icon " aria-hidden="true"><use href="icons.svg#phone"/></svg></span><h3>Redmi Note 9 Pro</h3><p>joyeuse</p></div><div class="device-card"><span class="device-mark"><svg class="icon " aria-hidden="true"><use href="icons.svg#phone"/></svg></span><h3>Redmi Note 9 Pro Max</h3><p>excalibur</p></div><div class="device-card"><span class="device-mark"><svg class="icon " aria-hidden="true"><use href="icons.svg#phone"/></svg></span><h3>Redmi Note 10 Lite</h3><p>curtana</p></div><div class="device-card"><span class="device-mark"><svg class="icon " aria-hidden="true"><use href="icons.svg#phone"/></svg></span><h3>Poco M2 Pro</h3><p>gram</p></div></div></section>
+  <section id="warning" class="home-section" aria-label="Before you flash"><div class="section-heading"><div><div class="eyebrow">A LITTLE PREPARATION GOES A LONG WAY</div><h2>Before you flash.</h2></div><p>Take a moment now. Thank yourself later.</p></div><div class="preparation-grid"><div class="warning-stack"><div class="alert amber"><svg class="icon alert-icon" aria-hidden="true"><use href="icons.svg#alert"/></svg><div><h3 class="alert-title">Important warning</h3><p class="alert-body">Flashing custom ROMs carries risks. Always backup your data, ensure your device is charged, and follow instructions carefully. The developers are not responsible for any damage to your device. Proceed at your own risk.</p><div class="alert-tags"><span class="alert-tag">Backup Data</span><span class="alert-tag">Charge &gt; 60%</span><span class="alert-tag">Unlock Bootloader</span></div></div></div>
+<div class="alert red"><svg class="icon alert-icon" aria-hidden="true"><use href="icons.svg#refresh"/></svg><div><h3 class="alert-title">The first-boot format matters.</h3><p class="alert-body">If you were using any ROM lower than Android 15, or any port ROM — <strong>you must format data in recovery after the 1st boot</strong> to avoid storage-related bugs. This is critical when coming from older Android versions or ported ROMs.</p></div></div></div><div class="prep-card"><div class="prep-heading"><h3>Your pre-flash checklist</h3><span class="checklist-count" aria-live="polite">0 / 4 ready</span></div><p class="prep-intro">Quick tips to get off to a good start.</p><div class="checklist"><label class="checklist-item"><input type="checkbox" data-prep="backup"><span class="custom-check"><svg class="icon " aria-hidden="true"><use href="icons.svg#check"/></svg></span><span><strong>Backup everything</strong><small>Use Titanium Backup or Migrate to save apps and data before flashing.</small></span></label><label class="checklist-item"><input type="checkbox" data-prep="battery"><span class="custom-check"><svg class="icon " aria-hidden="true"><use href="icons.svg#check"/></svg></span><span><strong>Charge your device</strong><small>Ensure at least 60% battery before starting the flashing process.</small></span></label><label class="checklist-item"><input type="checkbox" data-prep="cable"><span class="custom-check"><svg class="icon " aria-hidden="true"><use href="icons.svg#check"/></svg></span><span><strong>Use an OEM cable</strong><small>Use the original USB cable to avoid disconnection issues during flashing.</small></span></label><label class="checklist-item"><input type="checkbox" data-prep="read"><span class="custom-check"><svg class="icon " aria-hidden="true"><use href="icons.svg#check"/></svg></span><span><strong>Read carefully</strong><small>Read each step carefully before proceeding. Never skip any steps.</small></span></label></div><div class="prep-bottom"><span class="checklist-progress"><span></span></span><button type="button" class="reset-checklist">Reset checklist</button></div></div></div></section>
+  <section id="troubleshooting" class="home-section faq-section" aria-label="Terminology and troubleshooting"><div><div class="eyebrow">A FEW THINGS TO KNOW</div><h2>Small questions.<br>Useful answers.</h2><p>Terminology and troubleshooting, without the guesswork.</p></div><div class="faq-list"><details><summary>Clean flash or dirty flash?<svg class="icon " aria-hidden="true"><use href="icons.svg#chevron"/></svg></summary><div><p>A <strong>clean flash</strong> wipes all data before installing the ROM and is recommended for major updates. A <strong>dirty flash</strong> installs a new version over the old one, keeping user data. Always read ROM-specific instructions if provided, and back up before either method.</p></div></details><details><summary>What are GApps?<svg class="icon " aria-hidden="true"><use href="icons.svg#chevron"/></svg></summary><div><p>GApps is a Google Apps package for ROMs without built-in Google services. The guides cover vanilla ROMs, normal GApps, and VoltageOS with Sandboxed Google Play.</p></div></details><details><summary>Attachment not supported or storage bugs?<svg class="icon " aria-hidden="true"><use href="icons.svg#chevron"/></svg></summary><div><p>Perform a data format in recovery after first boot when coming from a ROM below Android 15 or a port ROM. Formatting erases your data, so back up first.</p></div></details><details><summary>Google Contacts won’t sync?<svg class="icon " aria-hidden="true"><use href="icons.svg#chevron"/></svg></summary><div><p>For Sandboxed Google Play, give Google Play Services the Contacts permission, then reboot. See the <a href="voltage_index.html#section-sandbox">VoltageOS sandbox guide</a> for the full setup and support links.</p></div></details></div></section>
+  <aside class="community-banner"><div><span class="eyebrow">YOU’RE IN GOOD COMPANY</span><h2>A little help is always close by.</h2><p>Questions, a tricky step, or just saying hello. The Miatoll community is here.</p></div><a href="https://t.me/Miatoll_Support" target="_blank" rel="noopener noreferrer" class="button button-light">Join the support group <svg class="icon " aria-hidden="true"><use href="icons.svg#arrow"/></svg></a></aside>
+</main><footer class="footer"><div class="footer-inner"><div class="footer-grid">
+  <div class="footer-col"><a href="index.html" class="nav-logo"><span class="nav-logo-icon"><svg class="icon " aria-hidden="true"><use href="icons.svg#bolt"/></svg></span><span class="nav-logo-name">miatoll<span class="logo-suffix"> / guides</span></span></a><p>Community-maintained flashing guides for Snapdragon 720G Miatoll devices.</p></div>
+  <div class="footer-col"><h3 class="footer-col-title">Stay connected</h3><div class="footer-links"><a href="https://t.me/Miatoll_Support" target="_blank" rel="noopener noreferrer" class="footer-link">Support ↗</a><a href="https://t.me/miatoll" target="_blank" rel="noopener noreferrer" class="footer-link">Updates ↗</a><a href="https://github.com/VoltageOS" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub ↗</a></div></div>
+  <div class="footer-col"><h3 class="footer-col-title">Built together</h3><div class="footer-links"><span class="contributor-chip">Frost</span><span class="contributor-chip">iHSAN</span><span class="contributor-chip">Community</span></div><p>Found a mistake? Contributions and pull requests are welcome.</p></div>
+</div><div class="footer-bottom"><p>For educational purposes only. All trademarks and logos belong to their respective owners.</p><p>Crafted with <svg class="icon " aria-hidden="true"><use href="icons.svg#heart"/></svg> by Frost &amp; iHSAN for the Miatoll community · 2025</p></div></div></footer>
+<button id="back-to-top" class="icon-button" type="button" aria-label="Back to top" title="Back to top" hidden><svg class="icon " aria-hidden="true"><use href="icons.svg#arrow-up"/></svg></button><div id="copy-status" class="sr-only" role="status" aria-live="polite"></div>
+</body></html>

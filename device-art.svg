@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="490" viewBox="0 0 560 490" fill="none">
+  <defs>
+    <linearGradient id="sunrise" x1="280" y1="68" x2="280" y2="420" gradientUnits="userSpaceOnUse"><stop stop-color="#FAAA78"/><stop offset="1" stop-color="#F8E7DA"/></linearGradient>
+    <linearGradient id="screen" x1="224" y1="146" x2="390" y2="427" gradientUnits="userSpaceOnUse"><stop stop-color="#F5A06F"/><stop offset="1" stop-color="#CF542B"/></linearGradient>
+    <linearGradient id="body" x1="197" y1="72" x2="435" y2="438" gradientUnits="userSpaceOnUse"><stop stop-color="#424540"/><stop offset="1" stop-color="#191C19"/></linearGradient>
+    <filter id="shadow" x="-50%" y="-30%" width="200%" height="180%"><feDropShadow dx="0" dy="20" stdDeviation="18" flood-color="#34372E" flood-opacity=".2"/></filter>
+    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r=".8" fill="#A5A79C" fill-opacity=".5"/></pattern>
+  </defs>
+  <circle cx="284" cy="238" r="195" fill="url(#sunrise)"/>
+  <circle cx="284" cy="238" r="217" stroke="#D8D6CC" stroke-dasharray="3 8"/>
+  <path d="M47 238h474M284 16v444" stroke="#DEB69A" stroke-opacity=".45"/>
+  <rect x="385" y="51" width="114" height="119" fill="url(#dots)"/><rect x="53" y="334" width="126" height="96" fill="url(#dots)"/>
+  <g transform="rotate(-13 217 250)" filter="url(#shadow)">
+    <rect x="133" y="86" width="169" height="329" rx="25" fill="#C4C9BF" stroke="#A7ADA1" stroke-width="2"/><rect x="140" y="94" width="155" height="313" rx="20" fill="#D8DCD3"/>
+    <rect x="149" y="104" width="63" height="69" rx="13" fill="#30352F"/>
+    <circle cx="165" cy="122" r="10" fill="#171D19" stroke="#60665C" stroke-width="2"/><circle cx="195" cy="122" r="10" fill="#171D19" stroke="#60665C" stroke-width="2"/><circle cx="165" cy="152" r="10" fill="#171D19" stroke="#60665C" stroke-width="2"/><circle cx="195" cy="152" r="5" fill="#F2EBDD"/>
+    <text x="170" y="369" font-family="Arial,sans-serif" font-size="12" letter-spacing="2" fill="#747D6D" transform="rotate(-90 170 369)">MIATOLL</text>
+  </g>
+  <g transform="rotate(9 327 253)" filter="url(#shadow)">
+    <rect x="231" y="75" width="190" height="359" rx="29" fill="url(#body)" stroke="#77796D" stroke-width="1.5"/><rect x="239" y="84" width="174" height="341" rx="22" fill="url(#screen)"/>
+    <path d="M239 307c0-80 39-141 87-141s87 61 87 141v118H239Z" fill="#F8DAB7"/><path d="M260 323c0-65 30-115 66-115s66 50 66 115v102H260Z" fill="#F9EBD1"/><path d="M282 345c0-48 20-84 44-84s44 36 44 84v80h-88Z" fill="#E89660"/>
+    <circle cx="326" cy="97" r="4.5" fill="#272E25"/>
+    <text x="257" y="124" font-family="Arial,sans-serif" font-size="8" fill="#462C1E" letter-spacing="1.5">MAKE IT YOURS</text><text x="257" y="162" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#3D291D" letter-spacing="-1">hello,</text><text x="257" y="193" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#3D291D" letter-spacing="-1">miatoll.</text>
+    <rect x="258" y="371" width="135" height="31" rx="15.5" fill="#FDF7EC" fill-opacity=".8"/><circle cx="276" cy="386.5" r="8" fill="#D16A3D"/><path d="m278 381-5 6h4l-1 5 5-7h-4z" fill="#FFF5E6"/><text x="291" y="389.5" font-family="Arial,sans-serif" font-size="8" font-weight="700" letter-spacing=".6" fill="#664732">A FRESH START</text>
+    <path d="M303 415h46" stroke="#63452D" stroke-width="3" stroke-linecap="round"/><path d="M423 153v40" stroke="#444A3D" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(373 336)"><rect width="151" height="63" rx="12" fill="#FEFDF9" stroke="#DFDFD4"/><rect x="12" y="15" width="33" height="33" rx="9" fill="#EDF0E8"/><rect x="21" y="24" width="15" height="15" rx="3" stroke="#718368" stroke-width="1.5"/><path d="M25 20v4m7-4v4m-7 15v4m7-4v4m-15-15h4m-4 7h4m15-7h4m-4 7h4" stroke="#718368" stroke-width="1.5"/><text x="56" y="27" font-family="Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="1" fill="#747D6E">SNAPDRAGON</text><text x="56" y="44" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#33392E">720G</text></g>
+  <circle cx="88" cy="169" r="5" fill="#C1643E"/><circle cx="464" cy="258" r="4" fill="#859777"/><path d="M81 169h-23m30-7v-20M464 265v22" stroke="#B2B2A3"/>
+</svg>

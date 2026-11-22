@@ -3,100 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="VoltageOS flashing guide for Miatoll — Redmi Note 9S/9Pro/9Pro Max/10 Lite/Poco M2 Pro">
+  <meta name="description" content="Your complete guide to installing VoltageOS on your Redmi Note 9S / 9 Pro / 9 Pro Max / 10 Lite / Poco M2 Pro.">
+  <meta name="theme-color" content="#f7f7f2">
   <title>VoltageOS Flashing Guide · Miatoll</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="theme.js"></script>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-  <!-- NAV -->
-  <header class="nav-wrap">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo">
-        <div class="nav-logo-icon" style="background:linear-gradient(135deg,#a3e635,#65a30d)">
-          <i class="fas fa-bolt" style="color:#fff;font-size:13px"></i>
-        </div>
-        <span class="nav-logo-name">VoltageOS Guide</span>
-        <span class="nav-badge" style="color:var(--volt);border-color:rgba(163,230,53,.3)">Miatoll</span>
-      </a>
-      <nav class="nav-links">
-        <a href="#section-recovery" class="nav-link"><i class="fas fa-mobile-alt"></i> Recovery</a>
-        <a href="#section-firmware" class="nav-link"><i class="fas fa-microchip"></i> Firmware</a>
-        <a href="#section-rom" class="nav-link"><i class="fas fa-download"></i> ROM</a>
-        <a href="#section-update" class="nav-link"><i class="fas fa-sync-alt"></i> Update</a>
-        <a href="#section-sandbox" class="nav-link special"><i class="fas fa-shield-alt"></i> Sandbox</a>
-      </nav>
-      <button class="mobile-menu-btn" id="mobile-menu-btn"><i class="fas fa-bars"></i></button>
-    </div>
-    <div class="mobile-menu" id="mobile-menu">
-      <a href="#section-recovery" class="nav-link"><i class="fas fa-mobile-alt"></i> Recovery</a>
-      <a href="#section-firmware" class="nav-link"><i class="fas fa-microchip"></i> Firmware</a>
-      <a href="#section-rom" class="nav-link"><i class="fas fa-download"></i> ROM</a>
-      <a href="#section-update" class="nav-link"><i class="fas fa-sync-alt"></i> Update</a>
-      <a href="#section-sandbox" class="nav-link special"><i class="fas fa-shield-alt"></i> Sandbox</a>
-    </div>
-  </header>
-
-  <main class="page-main">
-
-    <!-- HERO -->
-    <div class="hero">
-      <div class="hero-eyebrow" style="color:var(--volt);background:rgba(163,230,53,.1);border-color:rgba(163,230,53,.2)">
-        <i class="fas fa-bolt"></i> VoltageOS · Miatoll
-      </div>
-      <h1>Voltage OS<br>Flashing Guide</h1>
-      <p>Your complete guide to installing VoltageOS on your Redmi Note 9S / 9 Pro / 9 Pro Max / 10 Lite / Poco M2 Pro.</p>
-      <div class="device-badges">
-        <span class="device-badge">Redmi Note 9S</span>
-        <span class="device-badge">Redmi Note 9 Pro</span>
-        <span class="device-badge">Redmi Note 9 Pro Max</span>
-        <span class="device-badge">Redmi Note 10 Lite</span>
-        <span class="device-badge">Poco M2 Pro</span>
-      </div>
-    </div>
-
-    <!-- SECTIONS -->
-    <div class="sections">
+  <script src="script.js" defer></script>
+</head><body class="guide-page voltage-page"><a class="skip-link" href="#main">Skip to content</a>
+<header class="nav-wrap"><div class="nav-inner">
+  <a href="index.html" class="nav-logo" aria-label="Miatoll Guides home"><span class="nav-logo-icon"><svg class="icon " aria-hidden="true"><use href="icons.svg#bolt"/></svg></span><span class="nav-logo-name">miatoll<span class="logo-suffix"> / guides</span></span></a>
+  <nav class="nav-links" aria-label="Main navigation"><a href="index.html#guides" class="nav-link">The guides</a><a href="index.html#devices" class="nav-link">Supported devices</a><a href="index.html#warning" class="nav-link">Before you flash</a></nav>
+  <div class="nav-actions"><button class="icon-button theme-toggle" type="button" aria-label="Switch to dark theme"><svg class="icon " aria-hidden="true"><use href="icons.svg#moon"/></svg></button><a href="https://t.me/Miatoll_Support" target="_blank" rel="noopener noreferrer" class="nav-support">Get support <svg class="icon " aria-hidden="true"><use href="icons.svg#external"/></svg></a><button class="icon-button mobile-menu-btn" id="mobile-menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><svg class="icon " aria-hidden="true"><use href="icons.svg#menu"/></svg></button></div>
+</div><nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden><a href="index.html#guides" class="nav-link">The guides</a><a href="index.html#devices" class="nav-link">Supported devices</a><a href="index.html#warning" class="nav-link">Before you flash</a><a href="https://t.me/Miatoll_Support" target="_blank" rel="noopener noreferrer" class="nav-link">Community support ↗</a></nav></header>
+<main id="main" class="page-main">
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><svg class="icon " aria-hidden="true"><use href="icons.svg#chevron"/></svg><a href="index.html#guides">The guides</a><svg class="icon " aria-hidden="true"><use href="icons.svg#chevron"/></svg><span aria-current="page">VoltageOS</span></nav>
+  <div class="guide-hero"><div><div class="eyebrow"><svg class="icon " aria-hidden="true"><use href="icons.svg#bolt"/></svg> VOLTAGEOS / MIATOLL</div><h1>VoltageOS<br>flashing guide.</h1><p>Your complete guide to installing VoltageOS on your Redmi Note 9S / 9 Pro / 9 Pro Max / 10 Lite / Poco M2 Pro.</p><div class="device-badges"><span class="device-badge">Redmi Note 9S</span><span class="device-badge">Redmi Note 9 Pro</span><span class="device-badge">Redmi Note 9 Pro Max</span><span class="device-badge">Redmi Note 10 Lite</span><span class="device-badge">Poco M2 Pro</span></div></div><div class="guide-overview"><span class="guide-emblem"><svg class="icon " aria-hidden="true"><use href="icons.svg#bolt"/></svg></span><h2>VoltageOS</h2><p>AOSP-based · Privacy-focused</p><div><svg class="icon " aria-hidden="true"><use href="icons.svg#book"/></svg> 4 chapters, from recovery to updates</div><div><svg class="icon " aria-hidden="true"><use href="icons.svg#shield"/></svg> Vanilla, sandbox &amp; normal GApps</div><a href="#section-recovery" class="text-link">Let’s get started <svg class="icon " aria-hidden="true"><use href="icons.svg#arrow"/></svg></a></div></div>
+  <div class="guide-shell"><aside class="guide-sidebar"><div class="sidebar-inner"><p class="eyebrow">IN THIS GUIDE</p><nav class="table-of-contents" aria-label="On this page"><a href="#warning" class="toc-link"><svg class="icon " aria-hidden="true"><use href="icons.svg#alert"/></svg>Before you begin</a><a href="#section-recovery" class="toc-link"><span>01</span>Flashing recovery</a><a href="#section-firmware" class="toc-link"><span>02</span>Flashing firmware</a><a href="#section-rom" class="toc-link"><span>03</span>Installing the ROM</a><a href="#section-update" class="toc-link"><span>04</span>Updating your ROM</a><a href="#section-sandbox" class="toc-link sandbox-link"><svg class="icon " aria-hidden="true"><use href="icons.svg#shield"/></svg>Sandboxed Google Play</a><a href="#troubleshooting" class="toc-link"><svg class="icon " aria-hidden="true"><use href="icons.svg#bulb"/></svg>Troubleshooting</a></nav><div class="sidebar-note"><svg class="icon " aria-hidden="true"><use href="icons.svg#database"/></svg><strong>Back up before you begin.</strong><p>Keep your data safe and charge your device to at least 60%.</p></div><a href="normal_index.html" class="switch-guide">Other ROMs guide<svg class="icon " aria-hidden="true"><use href="icons.svg#arrow"/></svg></a><a href="https://t.me/Miatoll_Support" target="_blank" rel="noopener noreferrer" class="sidebar-support">Need a hand? Get support ↗</a></div></aside><div class="guide-content"><section id="warning" aria-label="Before you begin"><div class="alert amber"><svg class="icon alert-icon" aria-hidden="true"><use href="icons.svg#alert"/></svg><div><h3 class="alert-title">Important warning</h3><p class="alert-body">Flashing custom ROMs carries risks. Always backup your data, ensure your device is charged, and follow instructions carefully. The developers are not responsible for any damage to your device. Proceed at your own risk.</p><div class="alert-tags"><span class="alert-tag">Backup Data</span><span class="alert-tag">Charge &gt; 60%</span><span class="alert-tag">Unlock Bootloader</span></div></div></div>
+<div class="alert red"><svg class="icon alert-icon" aria-hidden="true"><use href="icons.svg#refresh"/></svg><div><h3 class="alert-title">The first-boot format matters.</h3><p class="alert-body">If you were using any ROM lower than Android 15, or any port ROM — <strong>you must format data in recovery after the 1st boot</strong> to avoid storage-related bugs. This is critical when coming from older Android versions or ported ROMs.</p></div></div></section><div class="sections">
 
       <!-- ── Section 1: Recovery ── -->
       <section id="section-recovery">
         <div class="section-header">
-          <div class="section-icon volt"><i class="fas fa-mobile-alt"></i></div>
+          <div class="section-icon volt"><svg class="icon " aria-hidden="true"><use href="icons.svg#phone"/></svg></div>
           <h2>Flashing Recovery</h2>
         </div>
 
         <div class="card">
-          <div class="subheading"><i class="fas fa-download volt-accent"></i> Downloads</div>
+          <div class="subheading"><svg class="icon volt-accent" aria-hidden="true"><use href="icons.svg#download"/></svg> Downloads</div>
           <div class="dl-grid">
-            <a href="https://orangefox.download/device/5fec5d694be4808bb3b0b7a2" target="_blank" class="dl-card">
-              <div class="dl-icon orange"><i class="fas fa-fire-alt"></i></div>
+            <a href="https://orangefox.download/device/5fec5d694be4808bb3b0b7a2" target="_blank" rel="noopener noreferrer" class="dl-card">
+              <div class="dl-icon orange"><svg class="icon " aria-hidden="true"><use href="icons.svg#fire"/></svg></div>
               <div><span class="dl-name">OFOX FBEv2</span><span class="dl-sub">OrangeFox Recovery</span></div>
             </a>
-            <a href="https://t.me/clarencerepo/510" target="_blank" class="dl-card">
-              <div class="dl-icon purple"><i class="fas fa-robot"></i></div>
+            <a href="https://t.me/clarencerepo/510" target="_blank" rel="noopener noreferrer" class="dl-card">
+              <div class="dl-icon purple"><svg class="icon " aria-hidden="true"><use href="icons.svg#robot"/></svg></div>
               <div><span class="dl-name">TWRP</span><span class="dl-sub">TeamWin Recovery</span></div>
             </a>
             <div class="dl-card" style="cursor:default">
-              <div class="dl-icon cyan"><i class="fas fa-box-open"></i></div>
+              <div class="dl-icon cyan"><svg class="icon " aria-hidden="true"><use href="icons.svg#box"/></svg></div>
               <div><span class="dl-name">AOSP Recovery</span><span class="dl-sub">Included in ROM zip</span></div>
             </div>
           </div>
 
-          <div class="subheading" style="margin-top:1.5rem"><i class="fas fa-list-ol volt-accent"></i> Steps</div>
+          <div class="subheading" style="margin-top:1.5rem"><svg class="icon volt-accent" aria-hidden="true"><use href="icons.svg#list"/></svg> Steps</div>
           <div class="step-list">
             <div class="step-item">
               <div class="step-num volt-num">1</div>
               <div class="step-body">
                 Reboot to <strong style="color:var(--text-primary)">Fastboot mode</strong> by holding:
                 <div class="key-combo">
-                  <kbd><i class="fas fa-volume-down"></i> Vol Down</kbd>
+                  <kbd><svg class="icon " aria-hidden="true"><use href="icons.svg#volume-down"/></svg> Vol Down</kbd>
                   <span class="key-plus">+</span>
-                  <kbd><i class="fas fa-power-off"></i> Power</kbd>
+                  <kbd><svg class="icon " aria-hidden="true"><use href="icons.svg#power"/></svg> Power</kbd>
                 </div>
                 <p style="font-size:.8rem;color:var(--text-muted);margin-top:.4rem">Hold until the fastboot logo appears</p>
               </div>
@@ -105,12 +67,12 @@
               <div class="step-num volt-num">2</div>
               <div class="step-body">
                 Connect to PC and flash recovery:
-                <p class="warn-text" style="font-size:.85rem;margin:.4rem 0"><i class="fas fa-info-circle" style="margin-right:5px;color:#fbbf24"></i>For OFOX, extract <code style="background:var(--bg-base);padding:1px 5px;border-radius:4px;font-size:12px">recovery.img</code> from the zip first</p>
+                <p class="warn-text" style="font-size:.85rem;margin:.4rem 0"><svg class="icon " aria-hidden="true" style="margin-right:5px;color:var(--amber)"><use href="icons.svg#info"/></svg>For OFOX, extract <code style="background:var(--bg-base);padding:1px 5px;border-radius:4px;font-size:12px">recovery.img</code> from the zip first</p>
                 <div class="code-wrap">
                   <pre><code>fastboot flash recovery recovery.img</code></pre>
-                  <button class="copy-btn"><i class="far fa-copy"></i> Copy</button>
+                  <button class="copy-btn" type="button" aria-label="Copy command"><svg class="icon " aria-hidden="true"><use href="icons.svg#copy"/></svg> Copy</button>
                 </div>
-                <p style="font-size:.8rem;color:var(--text-muted);margin-top:.5rem"><i class="fas fa-lightbulb" style="color:var(--volt);margin-right:5px"></i>You can also flash recovery from within an existing one via SD card</p>
+                <p style="font-size:.8rem;color:var(--text-muted);margin-top:.5rem"><svg class="icon " aria-hidden="true" style="color:var(--volt);margin-right:5px"><use href="icons.svg#bulb"/></svg>You can also flash recovery from within an existing one via SD card</p>
               </div>
             </div>
             <div class="step-item">
@@ -118,9 +80,9 @@
               <div class="step-body">
                 Reboot to <strong style="color:var(--text-primary)">Recovery mode</strong>:
                 <div class="key-combo">
-                  <kbd><i class="fas fa-volume-up"></i> Vol Up</kbd>
+                  <kbd><svg class="icon " aria-hidden="true"><use href="icons.svg#volume-up"/></svg> Vol Up</kbd>
                   <span class="key-plus">+</span>
-                  <kbd><i class="fas fa-power-off"></i> Power</kbd>
+                  <kbd><svg class="icon " aria-hidden="true"><use href="icons.svg#power"/></svg> Power</kbd>
                 </div>
                 <p style="font-size:.8rem;color:var(--text-muted);margin-top:.4rem">Hold until the recovery screen appears</p>
               </div>
@@ -132,25 +94,25 @@
       <!-- ── Section 2: Firmware ── -->
       <section id="section-firmware">
         <div class="section-header">
-          <div class="section-icon blue"><i class="fas fa-microchip"></i></div>
+          <div class="section-icon blue"><svg class="icon " aria-hidden="true"><use href="icons.svg#chip"/></svg></div>
           <h2>Flashing Firmware</h2>
         </div>
 
         <div class="card">
           <p style="margin-bottom:1.25rem">
             Download the latest regional firmware from
-            <a href="https://xmfirmwareupdater.com/" target="_blank" style="color:var(--cyan);text-decoration:underline;font-weight:600">XMFirmwareUpdater</a>.
+            <a href="https://xmfirmwareupdater.com/" target="_blank" rel="noopener noreferrer" style="color:var(--cyan);text-decoration:underline;font-weight:600">XMFirmwareUpdater</a>.
           </p>
 
           <div style="background:var(--bg-surface);border:1px solid var(--border);border-radius:10px;padding:1.25rem;margin-bottom:1.25rem">
-            <div class="subheading"><i class="fas fa-tools" style="color:#818cf8"></i> Using Recovery</div>
+            <div class="subheading"><svg class="icon " aria-hidden="true" style="color:var(--blue)"><use href="icons.svg#tools"/></svg> Using Recovery</div>
             <div class="step-list">
               <div class="step-item">
-                <div class="step-num" style="background:rgba(99,102,241,.15);border-color:rgba(99,102,241,.3);color:#818cf8">1</div>
+                <div class="step-num" style="background:var(--blue-dim);border-color:var(--border);color:var(--blue)">1</div>
                 <div class="step-body">In recovery, select the firmware file and flash it</div>
               </div>
               <div class="step-item">
-                <div class="step-num" style="background:rgba(99,102,241,.15);border-color:rgba(99,102,241,.3);color:#818cf8">2</div>
+                <div class="step-num" style="background:var(--blue-dim);border-color:var(--border);color:var(--blue)">2</div>
                 <div class="step-body">Flashing firmware is <span class="warn-text">not necessary every time</span> — only when updating Android versions or troubleshooting</div>
               </div>
             </div>
@@ -161,7 +123,7 @@
       <!-- ── Section 3: ROM ── -->
       <section id="section-rom">
         <div class="section-header">
-          <div class="section-icon purple"><i class="fas fa-download"></i></div>
+          <div class="section-icon purple"><svg class="icon " aria-hidden="true"><use href="icons.svg#download"/></svg></div>
           <h2>Flashing ROM</h2>
         </div>
 
@@ -169,17 +131,17 @@
 
           <!-- Clean Flash Vanilla -->
           <div class="card">
-            <div class="subheading"><i class="fas fa-broom" style="color:var(--cyan)"></i> Clean Flash — Vanilla</div>
+            <div class="subheading"><svg class="icon " aria-hidden="true" style="color:var(--cyan)"><use href="icons.svg#info"/></svg> Clean Flash — Vanilla</div>
             <div class="grid-2">
               <div>
-                <div class="subheading" style="font-size:.85rem;margin-bottom:.6rem"><i class="fas fa-wifi" style="color:#818cf8"></i> ADB Sideload</div>
+                <div class="subheading" style="font-size:.85rem;margin-bottom:.6rem"><svg class="icon " aria-hidden="true" style="color:var(--blue)"><use href="icons.svg#terminal"/></svg> ADB Sideload</div>
                 <div class="step-list">
                   <div class="step-item"><div class="step-num volt-num">1</div><div class="step-body">Select <span class="ui-label">Format Data</span></div></div>
                   <div class="step-item"><div class="step-num volt-num">2</div><div class="step-body">Select <span class="ui-label">ADB Sideload</span> → Swipe to enable</div></div>
                   <div class="step-item">
                     <div class="step-num volt-num">3</div>
                     <div class="step-body">On your PC:
-                      <div class="code-wrap"><pre><code>adb sideload rom.zip</code></pre><button class="copy-btn"><i class="far fa-copy"></i> Copy</button></div>
+                      <div class="code-wrap"><pre><code>adb sideload rom.zip</code></pre><button class="copy-btn" type="button" aria-label="Copy command"><svg class="icon " aria-hidden="true"><use href="icons.svg#copy"/></svg> Copy</button></div>
                     </div>
                   </div>
                   <div class="step-item"><div class="step-num volt-num">4</div><div class="step-body">Select <span class="ui-label">Format Data/Factory Reset</span></div></div>
@@ -187,7 +149,7 @@
                 </div>
               </div>
               <div>
-                <div class="subheading" style="font-size:.85rem;margin-bottom:.6rem"><i class="fas fa-sd-card" style="color:var(--green)"></i> SD Card / OTG</div>
+                <div class="subheading" style="font-size:.85rem;margin-bottom:.6rem"><svg class="icon " aria-hidden="true" style="color:var(--green)"><use href="icons.svg#sd-card"/></svg> SD Card / OTG</div>
                 <div class="step-list">
                   <div class="step-item"><div class="step-num volt-num">1</div><div class="step-body">Select <span class="ui-label">Format Data</span></div></div>
                   <div class="step-item"><div class="step-num volt-num">2</div><div class="step-body">Select <span class="ui-label">ROM file</span> → Swipe to flash</div></div>
@@ -199,8 +161,8 @@
           </div>
 
           <!-- Sandbox GApps -->
-          <div class="card" id="section-sandbox" style="border-color:rgba(52,211,153,.15)">
-            <div class="subheading"><i class="fas fa-shield-alt" style="color:var(--green)"></i> Clean Flash — Sandbox GApps</div>
+          <div class="card" id="section-sandbox" style="border-color:var(--border)">
+            <div class="subheading"><svg class="icon " aria-hidden="true" style="color:var(--green)"><use href="icons.svg#shield"/></svg> Clean Flash — Sandbox GApps</div>
             <p style="font-size:.875rem;margin-bottom:1.25rem">Follow <strong style="color:var(--text-primary)">Clean Flash (Vanilla)</strong> steps above, then continue:</p>
 
             <div class="step-list">
@@ -208,7 +170,7 @@
                 <div class="step-num emerald-num">1</div>
                 <div class="step-body">
                   After rebooting, download and install the
-                  <a href="https://github.com/GrapheneOS/AppStore/releases" target="_blank" style="color:var(--cyan);font-weight:600;text-decoration:underline">GrapheneOS App Store</a>
+                  <a href="https://github.com/GrapheneOS/AppStore/releases" target="_blank" rel="noopener noreferrer" style="color:var(--cyan);font-weight:600;text-decoration:underline">GrapheneOS App Store</a>
                 </div>
               </div>
               <div class="step-item">
@@ -216,9 +178,9 @@
                 <div class="step-body">
                   Open the App Store and install:
                   <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:.6rem">
-                    <div class="app-chip"><i class="fab fa-google-play" style="color:#34d399"></i> Google Play Services</div>
-                    <div class="app-chip"><i class="fas fa-cogs" style="color:#818cf8"></i> Services Framework</div>
-                    <div class="app-chip"><i class="fas fa-store" style="color:#fbbf24"></i> Google Play Store</div>
+                    <div class="app-chip"><svg class="icon " aria-hidden="true" style="color:var(--green)"><use href="icons.svg#play"/></svg> Google Play Services</div>
+                    <div class="app-chip"><svg class="icon " aria-hidden="true" style="color:var(--blue)"><use href="icons.svg#settings"/></svg> Services Framework</div>
+                    <div class="app-chip"><svg class="icon " aria-hidden="true" style="color:var(--amber)"><use href="icons.svg#store"/></svg> Google Play Store</div>
                   </div>
                 </div>
               </div>
@@ -232,11 +194,11 @@
             <div style="display:flex;flex-direction:column;gap:1rem;margin-top:1.25rem;padding:1rem;background:var(--bg-surface);border:1px solid var(--border);border-radius:10px">
               <div style="display:flex;gap:1rem;flex-wrap:wrap;align-items:flex-start">
                 <div style="flex-shrink:0;width:160px;border-radius:8px;overflow:hidden;border:1px solid var(--border)">
-                  <img src="https://raw.githubusercontent.com/Karan-Frost/images/refs/heads/main/IMG_20241209_143433_631.jpg" alt="GrapheneOS App Store" style="width:100%;height:auto;display:block">
+                  <img src="https://raw.githubusercontent.com/Karan-Frost/images/refs/heads/main/IMG_20241209_143433_631.jpg" alt="GrapheneOS App Store showing available sandboxed Google Play apps" loading="lazy" style="width:100%;height:auto;display:block">
                 </div>
                 <div style="flex:1;min-width:200px;display:flex;flex-direction:column;gap:.5rem;font-size:.875rem">
-                  <p>For more on Sandboxed Google Play, read the <a href="https://grapheneos.org/usage#sandboxed-google-play" target="_blank" style="color:var(--cyan);font-weight:600">official documentation</a>.</p>
-                  <p>For potential fixes and workarounds, check <a href="https://t.me/voltageos/122664" target="_blank" style="color:var(--cyan);font-weight:600">this VoltageOS support post</a>.</p>
+                  <p>For more on Sandboxed Google Play, read the <a href="https://grapheneos.org/usage#sandboxed-google-play" target="_blank" rel="noopener noreferrer" style="color:var(--cyan);font-weight:600">official documentation</a>.</p>
+                  <p>For potential fixes and workarounds, check <a href="https://t.me/voltageos/122664" target="_blank" rel="noopener noreferrer" style="color:var(--cyan);font-weight:600">this VoltageOS support post</a>.</p>
                 </div>
               </div>
             </div>
@@ -244,24 +206,24 @@
 
           <!-- Normal GApps -->
           <div class="card">
-            <div class="subheading"><i class="fab fa-google" style="color:#f87171"></i> Clean Flash — Normal GApps</div>
+            <div class="subheading"><svg class="icon " aria-hidden="true" style="color:var(--red)"><use href="icons.svg#google"/></svg> Clean Flash — Normal GApps</div>
             <div class="grid-2">
               <div>
-                <div class="subheading" style="font-size:.85rem;margin-bottom:.6rem"><i class="fas fa-wifi" style="color:#818cf8"></i> ADB Sideload</div>
+                <div class="subheading" style="font-size:.85rem;margin-bottom:.6rem"><svg class="icon " aria-hidden="true" style="color:var(--blue)"><use href="icons.svg#terminal"/></svg> ADB Sideload</div>
                 <div class="step-list">
                   <div class="step-item"><div class="step-num volt-num">1</div><div class="step-body">Select <span class="ui-label">Format Data</span></div></div>
                   <div class="step-item"><div class="step-num volt-num">2</div><div class="step-body">Select <span class="ui-label">ADB Sideload</span> → Swipe to enable</div></div>
                   <div class="step-item">
                     <div class="step-num volt-num">3</div>
                     <div class="step-body">Sideload ROM:
-                      <div class="code-wrap"><pre><code>adb sideload rom.zip</code></pre><button class="copy-btn"><i class="far fa-copy"></i> Copy</button></div>
+                      <div class="code-wrap"><pre><code>adb sideload rom.zip</code></pre><button class="copy-btn" type="button" aria-label="Copy command"><svg class="icon " aria-hidden="true"><use href="icons.svg#copy"/></svg> Copy</button></div>
                     </div>
                   </div>
                   <div class="step-item"><div class="step-num volt-num">4</div><div class="step-body"><span class="warn-text">DO NOT REBOOT.</span> Select ADB Sideload again</div></div>
                   <div class="step-item">
                     <div class="step-num volt-num">5</div>
                     <div class="step-body">Sideload GApps:
-                      <div class="code-wrap"><pre><code>adb sideload gapps.zip</code></pre><button class="copy-btn"><i class="far fa-copy"></i> Copy</button></div>
+                      <div class="code-wrap"><pre><code>adb sideload gapps.zip</code></pre><button class="copy-btn" type="button" aria-label="Copy command"><svg class="icon " aria-hidden="true"><use href="icons.svg#copy"/></svg> Copy</button></div>
                     </div>
                   </div>
                   <div class="step-item"><div class="step-num volt-num">6</div><div class="step-body">Select <span class="ui-label">Factory Reset</span></div></div>
@@ -269,7 +231,7 @@
                 </div>
               </div>
               <div>
-                <div class="subheading" style="font-size:.85rem;margin-bottom:.6rem"><i class="fas fa-sd-card" style="color:var(--green)"></i> SD Card / OTG</div>
+                <div class="subheading" style="font-size:.85rem;margin-bottom:.6rem"><svg class="icon " aria-hidden="true" style="color:var(--green)"><use href="icons.svg#sd-card"/></svg> SD Card / OTG</div>
                 <div class="step-list">
                   <div class="step-item"><div class="step-num volt-num">1</div><div class="step-body">Select <span class="ui-label">Format Data</span></div></div>
                   <div class="step-item"><div class="step-num volt-num">2</div><div class="step-body">Select <span class="ui-label">ROM file</span> → Swipe to flash</div></div>
@@ -279,7 +241,7 @@
                 </div>
                 <div class="info-box cyan" style="margin-top:1.25rem">
                   <h4>GApps Recommendation</h4>
-                  We recommend <a href="https://nikgapps.com/" target="_blank" style="color:var(--cyan);font-weight:600">NikGApps</a> or <a href="https://mindthegapps.com/" target="_blank" style="color:var(--cyan);font-weight:600">MindTheGApps</a>.
+                  We recommend <a href="https://nikgapps.com/" target="_blank" rel="noopener noreferrer" style="color:var(--cyan);font-weight:600">NikGApps</a> or <a href="https://mindthegapps.com/" target="_blank" rel="noopener noreferrer" style="color:var(--cyan);font-weight:600">MindTheGApps</a>.
                 </div>
               </div>
             </div>
@@ -291,20 +253,20 @@
       <!-- ── Section 4: Update ── -->
       <section id="section-update">
         <div class="section-header">
-          <div class="section-icon green"><i class="fas fa-sync-alt"></i></div>
+          <div class="section-icon green"><svg class="icon " aria-hidden="true"><use href="icons.svg#refresh"/></svg></div>
           <h2>Updating ROM</h2>
         </div>
 
         <div class="grid-3">
           <!-- Dirty Flash -->
           <div class="card">
-            <div class="subheading"><i class="fas fa-code-branch" style="color:#f59e0b"></i> Dirty Flash</div>
+            <div class="subheading"><svg class="icon " aria-hidden="true" style="color:var(--amber)"><use href="icons.svg#branch"/></svg> Dirty Flash</div>
             <div class="step-list">
               <div class="step-item"><div class="step-num volt-num">1</div><div class="step-body">Select <span class="ui-label">ADB Sideload</span> → Swipe to enable</div></div>
               <div class="step-item">
                 <div class="step-num volt-num">2</div>
                 <div class="step-body">Sideload the new ROM:
-                  <div class="code-wrap"><pre><code>adb sideload rom.zip</code></pre><button class="copy-btn"><i class="far fa-copy"></i> Copy</button></div>
+                  <div class="code-wrap"><pre><code>adb sideload rom.zip</code></pre><button class="copy-btn" type="button" aria-label="Copy command"><svg class="icon " aria-hidden="true"><use href="icons.svg#copy"/></svg> Copy</button></div>
                 </div>
               </div>
               <div class="step-item"><div class="step-num volt-num">3</div><div class="step-body">If no GApps, select <span class="ui-label">Reboot System Now</span></div></div>
@@ -321,7 +283,7 @@
 
           <!-- OTA -->
           <div class="card">
-            <div class="subheading"><i class="fas fa-mobile-alt" style="color:var(--green)"></i> Through OTA</div>
+            <div class="subheading"><svg class="icon " aria-hidden="true" style="color:var(--green)"><use href="icons.svg#phone"/></svg> Through OTA</div>
             <div class="step-list">
               <div class="step-item"><div class="step-num volt-num">1</div><div class="step-body">Go to <span class="ui-label">Settings</span> → <span class="ui-label">System</span> → <span class="ui-label">System updates</span></div></div>
               <div class="step-item"><div class="step-num volt-num">2</div><div class="step-body">Download the latest available build</div></div>
@@ -332,7 +294,7 @@
 
           <!-- Via Storage -->
           <div class="card">
-            <div class="subheading"><i class="fas fa-sd-card" style="color:#818cf8"></i> Via Storage / OTG</div>
+            <div class="subheading"><svg class="icon " aria-hidden="true" style="color:var(--blue)"><use href="icons.svg#sd-card"/></svg> Via Storage / OTG</div>
             <div class="step-list">
               <div class="step-item"><div class="step-num volt-num">1</div><div class="step-body">Download the latest build to storage</div></div>
               <div class="step-item"><div class="step-num volt-num">2</div><div class="step-body">Reboot to <span class="ui-label">Recovery</span></div></div>
@@ -345,41 +307,11 @@
         </div>
       </section>
 
-    </div>
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <div class="footer-col-title" style="color:var(--volt)">⚡ VoltageOS Guide</div>
-          <p>A comprehensive, community-maintained VoltageOS flashing guide for Miatoll devices.</p>
-        </div>
-        <div class="footer-col">
-          <div class="footer-col-title">Community</div>
-          <div class="footer-links">
-            <a href="https://t.me/Miatoll_Support" target="_blank" class="footer-link"><i class="fab fa-telegram-plane"></i> Support</a>
-            <a href="https://t.me/voltageos" target="_blank" class="footer-link"><i class="fas fa-bolt"></i> VoltageOS</a>
-            <a href="https://github.com/VoltageOS" target="_blank" class="footer-link"><i class="fab fa-github"></i> GitHub</a>
-          </div>
-        </div>
-        <div class="footer-col">
-          <div class="footer-col-title">Contributors</div>
-          <div class="footer-links">
-            <span class="contributor-chip">Frost</span>
-            <span class="contributor-chip">iHSAN</span>
-            <span class="contributor-chip">Community</span>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>Crafted by Frost &amp; iHSAN · 2025 · Educational purposes only</p>
-      </div>
-    </div>
-  </footer>
-
-  <button id="back-to-top" title="Back to top"><i class="fas fa-arrow-up"></i></button>
-  <script src="script.js"></script>
-</body>
-</html>
+    <section id="troubleshooting"><div class="section-header"><div class="section-icon"><svg class="icon " aria-hidden="true"><use href="icons.svg#bulb"/></svg></div><h2>Troubleshooting</h2></div><div class="faq-list"><details><summary>Clean flash or dirty flash?<svg class="icon " aria-hidden="true"><use href="icons.svg#chevron"/></svg></summary><div><p>A <strong>clean flash</strong> wipes all data before installing the ROM and is recommended for major updates. A <strong>dirty flash</strong> installs a new version over the old one, keeping user data. Always read ROM-specific instructions if provided, and back up before either method.</p></div></details><details><summary>What are GApps?<svg class="icon " aria-hidden="true"><use href="icons.svg#chevron"/></svg></summary><div><p>GApps is a Google Apps package for ROMs without built-in Google services. The guides cover vanilla ROMs, normal GApps, and VoltageOS with Sandboxed Google Play.</p></div></details><details><summary>Attachment not supported or storage bugs?<svg class="icon " aria-hidden="true"><use href="icons.svg#chevron"/></svg></summary><div><p>Perform a data format in recovery after first boot when coming from a ROM below Android 15 or a port ROM. Formatting erases your data, so back up first.</p></div></details><details><summary>Google Contacts won’t sync?<svg class="icon " aria-hidden="true"><use href="icons.svg#chevron"/></svg></summary><div><p>For Sandboxed Google Play, give Google Play Services the Contacts permission, then reboot. See the <a href="voltage_index.html#section-sandbox">VoltageOS sandbox guide</a> for the full setup and support links.</p></div></details><details><summary>Network, Bluetooth, or camera issues?<svg class="icon " aria-hidden="true"><use href="icons.svg#chevron"/></svg></summary><div><p>Try flashing the latest firmware for your region. Visit <a href="https://xmfirmwareupdater.com/" target="_blank" rel="noopener noreferrer">XMFirmwareUpdater</a> and follow the firmware steps above. Always read ROM-specific instructions if provided.</p></div></details></div></section></div><div class="guide-end"><span><svg class="icon " aria-hidden="true"><use href="icons.svg#check-circle"/></svg> You’re all set. Happy flashing!</span><a href="index.html#guides" class="text-link">Back to all guides <svg class="icon " aria-hidden="true"><use href="icons.svg#arrow"/></svg></a></div></div></div>
+</main><footer class="footer"><div class="footer-inner"><div class="footer-grid">
+  <div class="footer-col"><a href="index.html" class="nav-logo"><span class="nav-logo-icon"><svg class="icon " aria-hidden="true"><use href="icons.svg#bolt"/></svg></span><span class="nav-logo-name">miatoll<span class="logo-suffix"> / guides</span></span></a><p>Community-maintained flashing guides for Snapdragon 720G Miatoll devices.</p></div>
+  <div class="footer-col"><h3 class="footer-col-title">Stay connected</h3><div class="footer-links"><a href="https://t.me/Miatoll_Support" target="_blank" rel="noopener noreferrer" class="footer-link">Support ↗</a><a href="https://t.me/voltageos" target="_blank" rel="noopener noreferrer" class="footer-link">VoltageOS ↗</a><a href="https://github.com/VoltageOS" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub ↗</a></div></div>
+  <div class="footer-col"><h3 class="footer-col-title">Built together</h3><div class="footer-links"><span class="contributor-chip">Frost</span><span class="contributor-chip">iHSAN</span><span class="contributor-chip">Community</span></div><p>Found a mistake? Contributions and pull requests are welcome.</p></div>
+</div><div class="footer-bottom"><p>For educational purposes only. All trademarks and logos belong to their respective owners.</p><p>Crafted with <svg class="icon " aria-hidden="true"><use href="icons.svg#heart"/></svg> by Frost &amp; iHSAN for the Miatoll community · 2025</p></div></div></footer>
+<button id="back-to-top" class="icon-button" type="button" aria-label="Back to top" title="Back to top" hidden><svg class="icon " aria-hidden="true"><use href="icons.svg#arrow-up"/></svg></button><div id="copy-status" class="sr-only" role="status" aria-live="polite"></div>
+</body></html>
